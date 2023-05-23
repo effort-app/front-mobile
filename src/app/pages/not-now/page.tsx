@@ -13,7 +13,6 @@ export default function Home() {
   const router = useRouter();
   const [saudacao, setSaudacao] = useState('');
   const [mensagem, setMensagem] = useState('');
-  const [mensagens, setMensagens] = useState([]);
 
 
   useEffect(() => {
@@ -48,10 +47,6 @@ export default function Home() {
     router.push('pages/lets-go');
   };
 
-  const handleNotNow = () => {
-    router.push('pages/not-now');
-  };
-
 
   return (
     
@@ -76,22 +71,8 @@ export default function Home() {
           <div className="flex flex-row items-center justify-center w-screen">
             <h1 className="text-2xl font-bold text-center text-neutral-600 mt-5">{saudacao}, Marcos.</h1>
           </div>
-          <div className="flex flex-row items-center justify-center w-52 mt-5 rounded-xl bg-rose-500 p-5">
-            <h1>Que tal pensarmos que horas treinar hoje?</h1>
-          </div>
-          <div className="flex flex-row items-center justify-center w-screen">
-            <div 
-              className="text-center flex flex-col items-center justify-center w-24 mt-5 rounded-xl bg-rose-500 hover:bg-rose-700 p-4 mr-2" 
-              onClick={handleLetsGo}
-              >
-              Bora! 💪 
-            </div>
-            <div 
-              className="text-center flex flex-col items-center justify-center w-24 mt-5 rounded-xl bg-rose-500 hover:bg-rose-700 p-4 ml-2"
-              onClick={handleNotNow}
-              >
-              Depois 🥱
-            </div>
+          <div className="text-center flex flex-row items-center justify-center w-52 mt-5 rounded-xl bg-rose-500 p-5">
+            <h1>Então pode me escrever oque deseja fazer agora. </h1>
           </div>
           <div className="flex flex-row items-center justify-center w-screen fixed bottom-0">
             <Image 
