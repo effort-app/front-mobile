@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex flex-row items-center justify-center w-full bg-neutral-700 h-14">
           </div>
           <div className="flex flex-row items-center justify-center w-full">
-            <h1 className="text-2xl font-bold text-center text-neutral-600 mt-5">Como está sendo seu dia?</h1>
+            <h1 className="text-2xl font-bold text-center text-neutral-600 mt-5">Boa noite</h1>
           </div>
           <div className="flex flex-row items-center justify-center w-full absolute bottom-0 w-full p-4">
             <input 
